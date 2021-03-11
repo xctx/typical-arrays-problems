@@ -1,6 +1,13 @@
 
 exports.min = function min (array) {
-  return 0;
+  
+  let arr = Array.of(array).flat(); 
+
+  if (arr.length == 0 || array === undefined) {
+    return 0;
+  }
+
+  return Math.min( ...arr );
 }
 
 exports.max = function max (array) {
